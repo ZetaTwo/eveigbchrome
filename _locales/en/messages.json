@@ -1,0 +1,26 @@
+{
+   "extension_description": {
+      "description": "Extension description.",
+      "message": "This extensions let you emulate the EVE Online IGB for trusted sites."
+   },
+   "extension_name": {
+      "description": "Extension name.",
+      "message": "EVE IGB Emulator"
+   },
+   "gen_save": {
+      "description": "Save.",
+      "message": "Save"
+   },
+   "options_char": {
+      "description": "Character data.",
+      "message": "Character data"
+   },
+   "options_title": {
+      "description": "Options title.",
+      "message": "EVE IGB Emulator options"
+   },
+   "options_host": {
+      "description": "Hosts.",
+      "message": "Hosts"
+   }
+}
