@@ -1,26 +1,39 @@
 <!DOCTYPE html>
-<html>
- <head>
-  <title></title>
-  <style type="text/css">
-   #wrapper {
-    width: 950px;
-    margin: 0 auto;
-   }
-   
-  </style>
- </head>
- <body>
-  <div id="wrapper">
-  <h1 id="loc_title">OPTIONS_TITLE</h1>
-  <form id="options_form">
-   <h2 id="loc_host">HOSTS</h2>
-   <p><textarea id="form_host" cols="100" rows="10"></textarea></p>
-   <h2 id="loc_char">CHARACTER_DATA</h2>
-   <p><textarea id="form_char" cols="100" rows="10"></textarea></p>
-   <button id="loc_save">SAVE</button>
-  </form>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Chrome Bootstrap</title>
+  <link rel="stylesheet" type="text/css" href="chrome-bootstrap.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js" type="text/javascript"></script>
+  <script src="options.js"></script>
+</head>
+<body class="chrome-bootstrap">
+  <div class="frame">
+    <div class="navigation">
+      <h1><a href="#">EVE IGB</a></h1>
+      <ul class="menu">
+        <li class="selected">
+          <a href="#forms">Character</a>
+        </li>
+      </ul>
+    </div>
+    <div class="mainview view">
+      <div id="forms" class="selected">
+        <header>
+          <h1>Character settings <small id="loc_title">OPTIONS_TITLE</small></h1>
+        </header>
+        <div class="content">
+          <form id="options_form">
+           <h2 id="loc_host">HOSTS</h2>
+           <p><textarea id="form_host" cols="100" rows="10"></textarea></p>
+           <h2 id="loc_char">CHARACTER_DATA</h2>
+           <p><textarea id="form_char" cols="100" rows="10"></textarea></p>
+           <button id="loc_save">SAVE</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
- </body>
- <script src="options.js"></script>
+  
+</body>
 </html>
