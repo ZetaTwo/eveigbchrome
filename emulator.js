@@ -4,11 +4,17 @@ var hosts;
 
 window.CCPEVE = {};
 
-chrome.storage.sync.get({'char_data': {}, 'host_data': []}, function(items) {
-    char_data = items.char_data;
-    host_data = items.host_data;
-    hosts = host_data.split(/\n/);
-});
+chrome.runtime.onMessage.addListener(
+  function(request, sender, sendResponse) {
+    if(request === "eveigb_refresh") {
+      chrome.storage.sync.get({'char_data': {}, 'host_data': []}, function(items) {
+        char_data = items.char_data;
+        host_data = items.host_data;
+        hosts = host_data.split(/\n/);
+      });
+      sendResponse("eveigb_refreshed");
+    }
+  });
 
 chrome.webRequest.onBeforeSendHeaders.addListener(
   function(details) {
@@ -34,4 +40,4 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
   },
   { urls: ["<all_urls>"] },
   ["blocking", "requestHeaders"]
-);
+  );

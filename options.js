@@ -33,7 +33,9 @@ function save_data(evt) {
     return;
   }
   
+  //Update options in extension
   chrome.storage.sync.set({'char_data': char_data, 'host_data': host_data}, function() {
+    chrome.runtime.sendMessage("eveigb_refresh");
   });
 }
 
