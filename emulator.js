@@ -10,6 +10,7 @@ chrome.runtime.onMessage.addListener(
       chrome.storage.sync.get({'char_data': {}, 'host_data': []}, function(items) {
         char_data = items.char_data;
         host_data = items.host_data;
+
         hosts = host_data.split(/\n/);
       });
       sendResponse("eveigb_refreshed");
@@ -32,6 +33,7 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
     if(match) {
       for(name in char_data) {
         var value = char_data[name];
+        name = name.replace('-', '_').toUpperCase();
         details.requestHeaders.push({ name: name, value: value });
       }
     }

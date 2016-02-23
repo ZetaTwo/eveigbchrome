@@ -18,11 +18,11 @@
       "48": "icon48.png",
       "64": "icon64.png"
    },
-   "manifest_version": 2,
+   "manifest_version": 3,
    "name": "__MSG_extension_name__",
    "options_page": "options.html",
    "permissions": [ "storage", "webRequest", "webRequestBlocking", "*://*/*" ],
    "update_url": "http://clients2.google.com/service/update2/crx",
-   "version": "1.2",
+   "version": "1.2.1",
    "web_accessible_resources": [ "inject.js" ]
 }
