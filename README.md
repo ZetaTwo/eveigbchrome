@@ -6,7 +6,7 @@ This extension will let you browse sites which requires EVE Online IGB trust. By
 
 Currently supports identifying you as a specific character.
 
-To get your character data, please visit the following link from the EVE Online IGB: http://dev.zeta-two.com/eveigb/
+To get your character data, please visit the following link from the EVE Online IGB: http://eve.zeta-two.com/igb/
 
 Possible future additions
 -------------------------
